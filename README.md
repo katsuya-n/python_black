@@ -1,2 +1,19 @@
 # python_black
-blackを使ってみる
+
+### 起動
+
+```
+$ make start
+```
+
+### コンテナに入る
+
+```
+$ make bash
+```
+
+### black実行
+
+```
+$ make black
+```
