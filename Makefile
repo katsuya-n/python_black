@@ -16,10 +16,6 @@ down:
 black:
 	docker compose exec python-app black .
 
-.PHONY: ci-black
-ci-black:
-	docker compose exec python-app black . --check
-
 .PHONY: bash
 bash:
 	docker compose exec python-app bash
