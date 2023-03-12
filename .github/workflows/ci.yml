@@ -10,10 +10,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-
-      - name: docker compose up
-        run: |
-          make start
-      - name: ci-black
-        run: |
-          make ci-black
+      - uses: psf/black@stable
+        with:
+          src: "./"
